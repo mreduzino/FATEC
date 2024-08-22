@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Escopo de Variáveis em JavaScript</title>
+</head>
+<body>
+    <h1>Escopo de Variáveis em JavaScript</h1>
+    <script>
+        var globalVar = "Eu sou global"
+
+        function exemploEscopo() {
+            var localVar = "Eu sou local"
+            console.log(globalVar); // Acessível
+            console.log(localVar); // Acessível
+        }
+
+        exemploEscopo();
+        console.log(globalVar) // Acessível
+        // console.log(localVar); // Não acessível, causará erro
+
+        // Exemplo de Hoisting
+        console.log(hoistedVar); // undefined, devido ao hoisting
+        var hoistedVar = "Eu fui içada";
+    </script>
+</body>
+</html>
+
+<!-- Resumo:
+
+Variáveis Globais:
+Declaradas fora de qualquer função.
+Podem ser acessadas de qualquer parte do programa.
+
+Variáveis Locais:
+Declaradas dentro de uma função.
+Só podem ser acessadas dentro dessa função.
+
+Hoisting (Içamento):
+Em JavaScript, variáveis declaradas com var são içadas para o topo de seu contexto de execução, o que significa que podem ser referenciadas antes mesmo de serem declaradas no código.
+-->

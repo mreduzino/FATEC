@@ -1,0 +1,32 @@
+#main{
+    width: 90%;
+    margin: 0 auto;/* top/bottom - 0; çeft/right - auto */
+}
+h1{
+    text-align: center;
+}
+#dados-contato, #foto{
+    float: left;
+}
+#dados-contato{
+    width: 70%;
+}
+#foto{
+    width: 30%;
+    text-align: right;
+}
+#foto img{
+
+    width: 10vw;
+    height: 23vh;
+}
+#formacao{
+    clear: left;
+}
+#lista{
+    color: #0000FF;
+}
+.subtitulo-formacao{
+    background-color: #FFFF00;
+    padding: 1%;
+}

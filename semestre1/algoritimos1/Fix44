@@ -1,0 +1,25 @@
+valor = int(input("Digite um valor: "))
+
+def calcular_cubo(valor):
+    return valor ** 3
+
+def calcular_fatorial(valor):
+    if valor == 0:
+        return 1
+    else:
+        fatorial = 1
+        for i in range(1, valor + 1):
+            fatorial *= i
+        return fatorial
+
+def dividir_por_nove(valor):
+    return valor / 9
+
+if valor == 1 or valor == 2:
+    print(f"O valor {valor} elevado ao cubo é {calcular_cubo(valor)}.")
+elif valor % 3 == 0:
+    print(f"O fatorial de {valor} é {calcular_fatorial(valor)}.")
+elif valor in [4, 5, 7, 8]:
+    print(f"O valor {valor} dividido por 9 é {dividir_por_nove(valor)}.")
+else:
+    print("Valor inválido.")

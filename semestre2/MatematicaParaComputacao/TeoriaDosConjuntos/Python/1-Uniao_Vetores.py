@@ -23,5 +23,8 @@ def inserir_elementos():
     
     return A
 
+A = inserir_elementos()
+print(A)
+
 # Exemplo de uso:
 # A = inserir_elementos()  # Execute e insira valores manualmente.

@@ -1,3 +1,5 @@
+// Alunos: Marcelo Henrique Reduzino e Gustavo Silva de Carvalho
+
 const averageTemp = []
 averageTemp[0] = 31.9
 averageTemp[1] = 35.3

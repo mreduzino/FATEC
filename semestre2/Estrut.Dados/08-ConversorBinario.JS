@@ -1,3 +1,5 @@
+// Alunos: Marcelo Henrique Reduzino e Gustavo Silva de Carvalho
+
 function decimalToBinary(decNumber) {
     let stack = [];
     let binaryString = '';
